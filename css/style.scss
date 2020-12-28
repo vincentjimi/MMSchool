@@ -1,0 +1,25 @@
+body{
+    background: url("/img/annie-spratt-gM8igOIP5MA-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 105vw 100vh;
+    overflow-x: hidden;
+    .navbar{
+        background:url("/../img/MotionMotionNavbar.png");
+        // border-bottom: 5px solid transparent;
+        // border-image: url("/../img/MotionMotionNavbar.png") 20% round;
+        // background: #000;
+    }
+    .parallaxe-links div img{
+        width: 250px;
+    }
+    #scene5 {
+        width: 100vw;
+        // overflow-x: hidden;
+        img{
+            width: 105vw;
+        }
+    }
+    .text{
+        margin-top: 700px;
+    }
+}
