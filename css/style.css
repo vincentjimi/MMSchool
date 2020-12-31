@@ -1,27 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap");
 body {
-  background: url("/img/annie-spratt-gM8igOIP5MA-unsplash.jpg");
   background-repeat: no-repeat;
-  background-size: 105vw 100vh;
+  background-size: 100vw 100vh;
   overflow-x: hidden;
 }
 
 body .navbar {
   background: url("/../img/MotionMotionNavbar.png");
+  background-repeat: no-repeat;
+  border-bottom: 1px solid transparent;
 }
 
-body .parallaxe-links div img {
-  width: 250px;
+body .navbar-toggler {
+  border: none !important;
 }
 
-body #scene5 {
-  width: 100vw;
+body .navbar-toggler:hover {
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+  /* When the animation is finished, start again */
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-filter: sepia(100%) hue-rotate(-80deg) saturate(400%);
+          filter: sepia(100%) hue-rotate(-80deg) saturate(400%);
 }
 
-body #scene5 img {
-  width: 105vw;
+body .navbar-collapse {
+  border-bottom: 1px solid transparent;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 2em;
 }
 
-body .text {
-  margin-top: 700px;
+body .nav-item a:hover {
+  color: #FF0092 !important;
+}
+
+body .word-row {
+  position: absolute;
+}
+
+body .word span {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 8vw;
+  font-weight: bold;
+}
+
+body .size img {
+  width: 100%;
+  height: auto;
+  pointer-events: stroke;
+}
+
+body .size img:hover {
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+  /* When the animation is finished, start again */
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-filter: sepia(100%) hue-rotate(-80deg) saturate(400%);
+          filter: sepia(100%) hue-rotate(-80deg) saturate(400%);
+}
+
+@media screen and (max-width: 768px) {
+  body .section2-text {
+    position: relative;
+    z-index: 50;
+  }
+}
+
+body .section2-text p {
+  text-align: justify;
+  color: #949494;
+}
+
+body .section2-text h4 {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 2em;
+  color: #949494;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+footer {
+  color: #FF0092;
+}
+
+footer .row .line {
+  background: url("/../img/MotionMotionNavbar.png");
+  height: 10vh;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid transparent;
+}
+
+footer .row .col-4:first-child {
+  color: #949494;
 }
 /*# sourceMappingURL=style.css.map */

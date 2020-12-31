@@ -1,18 +1,16 @@
-<?php
-include('connexion.inc.php');
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=no"">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <title></title>
     <script src="https://kit.fontawesome.com/39f0c3e5ce.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="canvas-shapes"></div>
 <div class="container-fluid">
 
     <nav class="row navbar navbar-light fixed-top bg-white">
@@ -23,80 +21,123 @@ include('connexion.inc.php');
             </button>
         </div>
         
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto py-5 mt-lg-0">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-center" href="http://motionmotion.fr/2018/">ÉDITION 2018<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link text-center" href="http://motionmotion.fr/2019/">ÉDITION 2019</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
+                <a class="nav-link  text-center" href="#">ÉDITION 2020</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  text-center" href="http://motionmotion.fr/le-blog/">BLOG</a>
             </li>
             </ul>
         </div>
         </nav>
+        <div class="container">
+            <div class="row word-row mt-5 pt-5">
+                <div class="col-12 d-flex justify-content-center">
+                        <div class="word pr-5">
+                        <span>M</span>
+                        <span>O</span>
+                        <span>T</span>
+                        <span>I</span>
+                        <span>O</span>
+                        <span>N</span>
+                    </div>
+                    <div class="word">
+                        <span>M</span>
+                        <span>O</span>
+                        <span>T</span>
+                        <span>I</span>
+                        <span>O</span>
+                        <span>N</span>
+                    </div>
+            </div>
+        </div>
+            
+        </div>
+        <div class="row mt-5 pt-5">
 
-    <div class="row parallaxe-links mt-5 pt-5">
+        
 
-        <div id="scene" class="col-3">
-            <div data-depth="1"><img src="img/2020.png" alt=""></div>
-            <!-- <div data-depth="0.4"><img src="img/2020.png" alt=""></div>
-            <div data-depth="0.8"><img src="img/2020.png" alt=""></div>
-            <div data-depth="0.10"><img src="img/2020.png" alt=""></div> -->
-        </div>
-        <div id="scene2" class="col-3">
-            <div data-depth="2"><img src="img/2020.png" alt=""></div>
-            <!-- <div data-depth="0.4"><img src="img/2020.png" alt=""></div>
-            <div data-depth="0.8"><img src="img/2020.png" alt=""></div>
-            <div data-depth="0.10"><img src="img/2020.png" alt=""></div> -->
-        </div>
-        <div id="scene3" class="col-3">
-            <div data-depth="6"><img src="img/2020.png" alt=""></div>
-            <!-- <div data-depth="0.4"><img src="img/2020.png" alt=""></div>
-            <div data-depth="0.8"><img src="img/2020.png" alt=""></div>
-            <div data-depth="0.10"><img src="img/2020.png" alt=""></div> -->
-        </div>
-        <div id="scene4" class="col-3">
-            <div data-depth="2"><img src="img/2020.png" alt=""></div>
-            <!-- <div data-depth="0.4"><img src="img/2020.png" alt=""></div>
-            <div data-depth="0.8"><img src="img/2020.png" alt=""></div>
-            <div data-depth="0.10"><img src="img/2020.png" alt=""></div> -->
-        </div>
+            <div id="scene" class="col-3">
+                <div data-depth="4" class="size"><img src="img/mmBrain.png" alt=""></div>
+            </div>
+            
+            <div id="scene2" class="col-3 ">
+                <div data-depth="6" class="size"><img src="img/mmTime4.png" alt=""></div>
+                <div data-depth="5" class="size justify-content-center align-items-center d-flex"><canvas class="clock" id="canvas" width="350" height="350" style=""></canvas></div>
+                <div data-depth="4" class="size"><img src="img/mmTime2.png" alt=""></div>
+            </div>
+            
+            
+            <div id="scene3" class="col-3">
+                    <div data-depth="7" class="size"><img src="img/mmMonitor.png" alt=""></div>
+                </div>
+                <div id="scene4" class="col-3">
+                    <div data-depth="5" class="size"><img id="eye" src="img/mmEye.png" alt=""></div>
+                </div>
+                <div id="scene5" class="col-3">
+                    <div data-depth="6" class="size"><img src="img/mmHand.png" alt=""></div>
+                </div>
+                <div id="scene6" class="col-3">
+                    <div data-depth="7" class="size"><img src="img/mmKeyboard.png" alt=""></div>
+                </div>
+    
+                <div id="scene7" class="col-3">
+                    <div data-depth="5" class="size"><img src="img/mmPencil1.png" alt=""></div>
+                    <!-- <div data-depth="4" class="size"><img src="img/mmPencil2.png" alt=""></div> -->
+                </div>
+                <div id="scene8" class="col-3">
+                    <div data-depth="4" class="size"><img src="img/mmSharpener.png" alt=""></div>
+                </div>
+        
+
         
     </div>
-    <div class="row">
-        <div id="scene5" class="col-3">
-            <div data-depth="0.1"><img src="img/illustrationMotionMotion.png" alt=""></div>
-            <div data-depth="0.2"><img src="img/illustrationMotionMotion2.png" alt=""></div>
-            <div data-depth="0.3"><img src="img/illustrationMotionMotion3.png" alt=""></div>
-            <div data-depth="0.4"><img src="img/illustrationMotionMotion4.png" alt=""></div>
-        </div>
-    </div>
-    <div class="container">
 
-            <div class="row text">
-                <div class="col-12 col-md-4">
+    <div class="container section2-text my-5 py-5">
+
+            <div class="row text bg-white py-md-4">
+                <div class="col-12 p-4">
+                    <h4>La suite</h4>
+                </div>
+                <div class="col-12 col-md-4 px-4">
                     <p>
                     Depuis 3 ans, en partenariat avec Stereolux, Motion Motion propose une journée entièrement dédiée au graphisme animé à travers des œuvres, conférences, rencontres, films, ateliers pour les familles, et concerts audiovisuels dans une ambiance conviviale, favorable à la découverte et à l’échange.
                     Entièrement gratuit, Motion Motion est l’unique festival français de motion design s’adressant à un large public, l’occasion pour tous de découvrir la discipline dans toute sa diversité : 3D, 2D, animation traditionnelle, stop motion, etc…
-                </p>
+                    </p>
+                </div>
+                <div class="col-12 col-md-4 px-4">
+                    <p>
+                        Vous avez été près de 5000 à assister à la dernière édition, faisant de Motion Motion un événement incontournable du motion design en France ! Merci à vous !
+                        C’est votre enthousiasme qui pousse l’équipe, entièrement bénévole, à imaginer un nouveau format pour Motion Motion, qui verra le jour au Printemps 2021 à Nantes.
+                        L’objectif est de pouvoir vous accueillir toujours plus nombreux, dans les meilleures conditions, avec la même énergie et la même passion.
+                    </p>
+                </div>
+                <div class="col-12 col-md-4 px-4">
+                    <p>
+                        En attendant, nous vous préparons quelques surprises pour 2020 ! Pour ne rien rater, retrouvez toute notre actualité sur la page Facebook et dans notre Newsletter !
+                    </p>
+                </div>
             </div>
-            <div class="col-12 col-md-4">
-                <p>
-                    Vous avez été près de 5000 à assister à la dernière édition, faisant de Motion Motion un événement incontournable du motion design en France ! Merci à vous !
-                    C’est votre enthousiasme qui pousse l’équipe, entièrement bénévole, à imaginer un nouveau format pour Motion Motion, qui verra le jour au Printemps 2021 à Nantes.
-                    L’objectif est de pouvoir vous accueillir toujours plus nombreux, dans les meilleures conditions, avec la même énergie et la même passion.
-                </p>
-            </div>
-            <div class="col-12 col-md-4">
-                <p>
-                    En attendant, nous vous préparons quelques surprises pour 2020 ! Pour ne rien rater, retrouvez toute notre actualité sur la page Facebook et dans notre Newsletter !
-                </p>
+    </div>
+    <footer>
+        <div class="container mb-5 pb-5">
+            <div class="row">
+                <div class="col-4">#staytuned</div>
+                <div class="col-12 line"></div>
+                <div class="col-12 col-md-4">contact@motionmotion.fr</div>
+                <div class="col-12 col-md-4">newsletter</div>
+                <div class="col-12 col-md-4"></div>
             </div>
         </div>
-    </div>
+    </footer>
 </div>
 
 
@@ -106,5 +147,223 @@ include('connexion.inc.php');
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="js/parallax.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script>
+        ///This code if from code pen => https://codepen.io/Asadabbas/pen/OwOxBX
+        //CE code vient de code pen => https://codepen.io/Asadabbas/pen/OwOxBX
+        //// You Can Change shapes With "circle" , "square" , "triangle", "hexa" or custom image at Bottom of Js code////
+
+var canvasShape = function(block_id, params) {
+    if (typeof params === "object") {
+        if (typeof params.size === "number") {
+            var radius_ball = params.size;
+        } else {
+            var radius_ball = '10';
+        }
+      if (typeof params.image === "string") {
+            var image = params.image;
+        } else {
+            var image = 'http://kidschemistry.ru/wp-content/themes/fary-chemical/images/smile/icon_cool.png';
+        }
+        if (typeof params.speed === "number") {
+            var speed_ball = params.speed;
+        } else {
+            var speed_ball = '10';
+        }
+        if (typeof params.number_of_item === "number") {
+            if (params.number_of_item > 250) {
+            var total_ball = 250; 
+            } else {
+                var total_ball = params.number_of_item;
+            }
+        } else {
+            var total_ball = '150';
+        }
+        if (typeof params.shape === "string") {
+            var ballShape = params.shape;
+        } else {
+            var ballShape = 'circle';
+        }
+    // Defaule 
+    } else {
+        var radius_ball = '10';
+        var speed_ball = '10';
+        var total_ball = '150';
+        var ballShape = 'square';
+    }
+
+    var canvas_el = document.createElement('canvas');
+    var canvas = document.getElementById(block_id).appendChild(canvas_el);
+    var ctx = canvas.getContext("2d");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    var particles = [];
+    var color1 = params.color;
+    document.getElementById(block_id).setAttribute("style", "position: absolute; left: 0; right: 0;");
+
+    //Particle object with random starting position, velocity and color
+    var Particle = function(x, y) {
+        if (!x) {
+            this.x = canvas.width * Math.random();
+        } else {
+            this.x = x;
+        }
+        if (!x) {
+            this.y = canvas.height * Math.random();
+        } else {
+            this.y = y;
+        }
+
+        this.vx = speed_ball * Math.random() - 2;
+        this.vy = speed_ball * Math.random() - 2;
+        this.Color = "#FF0092";
+
+    }
+    //Ading two methods
+    Particle.prototype.Draw = function(ctx) {
+        ctx.fillStyle = this.Color;
+        if (ballShape == 'circle') {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, radius_ball, 0, 2 * Math.PI, false);
+            ctx.fill();
+        } else if (ballShape == 'square') {
+            ctx.fillRect(this.x, this.y, radius_ball, radius_ball);
+        } else if (ballShape == "triangle") {
+            var tri = [ctx.beginPath(), ctx.moveTo(this.x, this.y), ctx.lineTo(this.x + radius_ball, this.y + radius_ball), ctx.lineTo(this.x + radius_ball, this.y - radius_ball), ctx.closePath(), ctx.fill()]
+        }else if (ballShape == "hexa"){
+            var side = 0;
+            var size = radius_ball;
+            var x = this.x;
+            var y = this.y;
+            ctx.beginPath();
+            ctx.moveTo(x + size * Math.cos(0), y + size * Math.sin(0));
+            for (side; side < 7; side++) {
+                ctx.lineTo(x + size * Math.cos(side * 2 * Math.PI / 6), y + size * Math.sin(side * 2 * Math.PI / 6));
+            }
+            ctx.fill();
+        } else if(ballShape == "img"){
+            var img = new Image();
+            img.src = image;
+            ctx.drawImage(img, this.x, this.y);
+        }
+    }
+    Particle.prototype.Update = function() {
+        this.x += this.vx;
+        this.y += this.vy;
+
+        if (this.x < 0 || this.x > canvas.width)
+            this.vx = -this.vx;
+
+        if (this.y < 0 || this.y > canvas.height)
+            this.vy = -this.vy;
+    }
+
+    function loop() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        var my_gradient=ctx.createLinearGradient(0,0,1970,0);
+        my_gradient.addColorStop(0,"white");
+        my_gradient.addColorStop(0.5,"white");
+        my_gradient.addColorStop(1,"white");
+        ctx.fillStyle=my_gradient;
+        ctx.fillRect(0,0,canvas.width,canvas.height);
+
+        for (var i = 0; i < particles.length; i++) {
+            particles[i].Update();
+            particles[i].Draw(ctx);
+        }
+        requestAnimationFrame(loop);
+    }
+    //Create particles
+    for (var i = 0; i < total_ball; i++)
+        particles.push(new Particle());
+
+    function drawCircle(event) {
+        for (var i = 0; i < 2; i++) {
+            cursorX = event.pageX;
+            cursorY = event.pageY;
+            particles.unshift(new Particle(cursorX, cursorY));
+             if(particles.length > 500){
+              particles.pop();
+            }
+        }
+    }
+    document.getElementById(block_id).style.overflow = 'hidden';
+    document.getElementById(block_id).addEventListener('click', drawCircle);
+    document.getElementById(block_id).addEventListener('mousemove', drawCircle);
+    loop();
+    window.onresize = function() {  
+       canvas_Wth = window.innerWidth;
+       canvas_hgt = window.innerHeight;
+       canvas.width = canvas_Wth;
+       canvas.height = canvas_hgt; 
+    }
+  
+   } 
+
+// // Customization
+canvasShape('canvas-shapes', {
+  size: 6,  // Change Elements Size 
+  speed: 5, // Change Elements Speed
+  number_of_item:600,  // Max Limit Of Iteam 250
+  shape: "triangle",  //You Can Change With "circle" , "square" , "triangle", "hexa"
+  // color: '#008000',  // Change Elements Color
+  // image: "http://petitrocher.camp-atlantique.com/sites/default/files/styles/icone_titre_home_25_25/public/icone_smile_soleil_134.png",
+  
+});
+
+    </script>
+    <script>
+        var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var radius = canvas.height / 2;
+ctx.translate(radius, radius);
+radius = radius * 0.90
+setInterval(drawClock, 1000);
+
+function drawClock() {
+  drawFace(ctx, radius/1.1);
+  drawTime(ctx, radius);
+}
+
+function drawFace(ctx, radius) {
+  var grad;
+  ctx.beginPath();
+  ctx.arc(0, 0, radius, 0, 2*Math.PI);
+  ctx.fillStyle = 'white';
+  ctx.fill();
+
+}
+
+
+function drawTime(ctx, radius){
+    var now = new Date();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+    //hour
+    hour=hour%12;
+    hour=(hour*Math.PI/6)+
+    (minute*Math.PI/(6*60))+
+    (second*Math.PI/(360*60));
+    drawHand(ctx, hour, radius*0.5, radius*0.07);
+    //minute
+    minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+    drawHand(ctx, minute, radius*0.8, radius*0.07);
+    // second
+    second=(second*Math.PI/30);
+    drawHand(ctx, second, radius*0.9, radius*0.02);
+}
+
+function drawHand(ctx, pos, length, width) {
+    ctx.beginPath();
+    ctx.lineWidth = width;
+    ctx.lineCap = "round";
+    ctx.moveTo(0,0);
+    ctx.rotate(pos);
+    ctx.lineTo(0, -length);
+    ctx.stroke();
+    ctx.rotate(-pos);
+}
+    </script>
 </body>
 </html>
