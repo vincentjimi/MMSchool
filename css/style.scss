@@ -38,15 +38,45 @@ body{
             color: #FF0092 !important;
         }
     }
-    .word-row{
+ 
+    .word-row {
         position: absolute;
+        // animation: place 10s ease infinite alternate;
     }
+    // @keyframes place {
+    //     0%{top:800px ;}
+    //     25%{top:-400px ;}
+    //     50%{top:-600px ;}
+    //     75%{top:-800px ;}
+    //     100%{top:-1000px ;}
+    // }
     .word span{
-        
         font-family: 'Cabin Sketch', cursive;
-        font-size:8vw;
+        font-size:4vw;
         font-weight: bold;
     }
+    .bounce span {
+        top: .75em;
+        position: relative;
+        display: inline-block;
+        animation: bounce 1s ease infinite alternate;
+      }
+      .bounce span:nth-child(2) { animation-delay: .1s; }
+      .bounce span:nth-child(3) { animation-delay: .2s; }
+      .bounce span:nth-child(4) { animation-delay: .3s; }
+      .bounce span:nth-child(5) { animation-delay: .4s; }
+      .bounce span:nth-child(6) { animation-delay: .5s; }
+      .bounce span:nth-child(7) { animation-delay: .6s; }
+      .bounce span:nth-child(8) { animation-delay: .7s; }
+      
+      
+      @keyframes bounce {
+        100% {
+          top: -20px;
+          text-shadow: 0 1px 0 #FF0092, 0 2px 0 #FF0092, 0 3px 0 #FF0092, 0 4px 0 #FF0092, 0 5px 0 #FF0092;
+        }
+      }
+
     
    .size img{
         width: 100%;
