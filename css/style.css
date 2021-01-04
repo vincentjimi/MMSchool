@@ -131,10 +131,9 @@ body .section2-text p {
   color: #949494;
 }
 
-body .section2-text h4 {
+body .section2-text h2 {
   font-family: 'Cabin Sketch', cursive;
-  font-size: 2em;
-  color: #949494;
+  font-size: 3em;
 }
 
 @-webkit-keyframes shake {
@@ -244,5 +243,119 @@ footer .row .line {
 
 footer .row .col-4:first-child {
   color: #949494;
+}
+
+#edition2020 {
+  /* THE CARD HOLDS THE FRONT AND BACK FACES */
+  /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+  /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+  /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+}
+
+#edition2020 .video-row {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#edition2020 .video-row video {
+  width: 100vw;
+  height: auto;
+}
+
+#edition2020 .video-row img {
+  width: 100vw;
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+}
+
+#edition2020 .header-h1 {
+  font-size: 8vw;
+  font-family: 'Cabin Sketch', cursive;
+  font-weight: bold;
+}
+
+#edition2020 .header-h2 {
+  font-size: 4vw;
+  font-family: 'Cabin Sketch', cursive;
+  color: #949494;
+}
+
+#edition2020 .date {
+  color: #FF0092;
+  font-family: 'Cabin Sketch', cursive;
+}
+
+#edition2020 p {
+  text-align: justify;
+  color: #949494;
+}
+
+#edition2020 p span {
+  color: #FF0092;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: .99em;
+}
+
+#edition2020 .figure-one {
+  -webkit-clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
+          clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
+  background-color: black;
+  color: white;
+}
+
+#edition2020 .figure-one p {
+  color: white;
+}
+
+#edition2020 .thecard {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+#edition2020 .thecard:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+#edition2020 .thefront {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  overflow: hidden;
+  background: #ffc728;
+  color: #000;
+}
+
+#edition2020 .theback {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  overflow: hidden;
+  background: #fafafa;
+  color: #333;
+  text-align: center;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 /*# sourceMappingURL=style.css.map */

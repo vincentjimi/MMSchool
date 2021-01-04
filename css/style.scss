@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap');
 
+$paragraph-color: #949494;
+$theme-pink: #FF0092;
+
 body{
     // background: url("/../img/annie-spratt-gM8igOIP5MA-unsplash.jpg");
     background-repeat: no-repeat;
@@ -35,25 +38,19 @@ body{
     }
     .nav-item a{
         &:hover{
-            color: #FF0092 !important;
+            color: $theme-pink !important;
         }
     }
  
     .word-row {
         position: absolute;
-        // animation: place 10s ease infinite alternate;
     }
-    // @keyframes place {
-    //     0%{top:800px ;}
-    //     25%{top:-400px ;}
-    //     50%{top:-600px ;}
-    //     75%{top:-800px ;}
-    //     100%{top:-1000px ;}
-    // }
+
     .word span{
         font-family: 'Cabin Sketch', cursive;
         font-size:4vw;
         font-weight: bold;
+        // font-family: 'Londrina Sketch', cursive;
     }
     .bounce span {
         top: .75em;
@@ -73,7 +70,7 @@ body{
       @keyframes bounce {
         100% {
           top: -20px;
-          text-shadow: 0 1px 0 #FF0092, 0 2px 0 #FF0092, 0 3px 0 #FF0092, 0 4px 0 #FF0092, 0 5px 0 #FF0092;
+          text-shadow: 0 1px 0 $theme-pink, 0 2px 0 $theme-pink, 0 3px 0 $theme-pink, 0 4px 0 $theme-pink, 0 5px 0 $theme-pink;
         }
       }
 
@@ -97,12 +94,12 @@ body{
         }
         p{
             text-align: justify;
-            color: #949494;
+            color: $paragraph-color;
         }
-        h4{
+        h2{
             font-family: 'Cabin Sketch', cursive;
-            font-size: 2em;
-            color: #949494;
+            font-size: 3em;
+            // color: $paragraph-color;
         }
     }
 
@@ -124,7 +121,7 @@ body{
   }
 
 footer {
-    color:#FF0092;
+    color:$theme-pink;
     .row .line{
         background:url("/../img/MotionMotionNavbar.png");
         height: 10vh;
@@ -134,7 +131,128 @@ footer {
         border-bottom: 1px solid transparent;
     }
     .row .col-4:first-child{
-        color: #949494;
+        color: $paragraph-color;
     }
+
+
+}
+#edition2020{
+.video-row{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    video{
+        width: 100vw;
+        height: auto;
+    }
+    img{
+        width: 100vw;
+        position: absolute;
+        z-index: 10;
+        bottom: 0;
+    }
+}
+.header-h1{
+    font-size: 8vw;
+    font-family: 'Cabin Sketch', cursive;
+    font-weight: bold;
+}
+.header-h2{
+    font-size: 4vw;
+    font-family: 'Cabin Sketch', cursive;
+    color: $paragraph-color;
+    // text-transform: uppercase;
+}
+.date{
+     color: $theme-pink;
+     font-family: 'Cabin Sketch', cursive;
+}
+p{  
+    text-align: justify;
+    color: $paragraph-color;
+    span{
+        color: $theme-pink;
+        font-family: 'Cabin Sketch', cursive; 
+        font-size: .99em;
+    }
+}
+.figure-one{
+    clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
+    background-color: black;
+    color: white;
+
+    p{
+        color: white;
+    }
+
+}
+
+
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+  }
+  
+  /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+  .thecard:hover{
+    transform: rotateY(180deg);
+  }
+  
+  /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+   .thefront{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #ffc728;
+    color: #000;
+  }
+  
+  /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+  .theback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #fafafa;
+    color: #333;
+    text-align: center;
+    transform: rotateY(180deg);
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
