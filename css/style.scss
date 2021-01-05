@@ -5,11 +5,12 @@ $paragraph-color: #949494;
 $theme-pink: #FF0092;
 
 body{
+
     // background: url("/../img/annie-spratt-gM8igOIP5MA-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     overflow-x: hidden;
-    // cursor: url("/../img/cur.png"), auto;	
+    cursor: url("/../img/cursor.png"), auto;	
 
     .navbar{
         background:url("/../img/MotionMotionNavbar.png");
@@ -17,7 +18,7 @@ body{
         border-bottom: 1px solid transparent;
         // background: rgba(0, 0, 0, 0);
     }
-    .navbar-toggler{
+    .navbar-toggler, .navbar-brand{
         border: none !important;
         &:hover {
             animation: shake 0.5s;
@@ -158,6 +159,57 @@ footer {
     font-family: 'Cabin Sketch', cursive;
     font-weight: bold;
 }
+#mheader{
+    letter-spacing: -10px;
+    display: inline;
+}
+
+.fixed{
+    position: absolute;
+}
+.fixed2{
+    position: absolute;
+    right: 0;
+    transform: translate(0,-500px);
+}
+.bounce2 span {
+        position: fixed;
+        top: .75em;
+        position: relative;
+        display: block;
+        animation: bounce 1s ease infinite alternate;
+  }
+  .bounce2 span:nth-child(2) { animation-delay: .1s; }
+  .bounce2 span:nth-child(3) { animation-delay: .2s; }
+  .bounce2 span:nth-child(4) { animation-delay: .3s; }
+  .bounce2 span:nth-child(5) { animation-delay: .4s; }
+  .bounce2 span:nth-child(6) { animation-delay: .5s; }
+  .bounce2 span:nth-child(7) { animation-delay: .6s; }
+  .bounce2 span:nth-child(8) { animation-delay: .7s; }
+  .bounce2 span:nth-child(9) { animation-delay: .8s; }
+  .bounce2 span:nth-child(10) { animation-delay: .9s; }
+  .bounce2 span:nth-child(11) { animation-delay: .10s; }
+  .bounce2 span:nth-child(12) { animation-delay: .11s; }
+  .bounce2 span:nth-child(13) { animation-delay: .12s; }
+  .bounce2 span:nth-child(14) { animation-delay: .13s; }
+  
+
+
+  @keyframes bounce2 {
+    100% {
+    // transform: translate(0,100px);
+    top: -20px;
+      text-shadow: 0 1px 0 $theme-pink, 0 2px 0 $theme-pink, 0 3px 0 $theme-pink, 0 4px 0 $theme-pink, 0 5px 0 $theme-pink;
+    }
+  }
+
+
+
+
+
+
+
+
 .header-h2{
     font-size: 2.5em;
     font-family: 'Cabin Sketch', cursive;
@@ -186,6 +238,9 @@ p{
 .figure-one{
     clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
     background-color: black;
+    min-height: 800px;
+    display: grid;
+    place-items: center;
     color: white;
 
     p{
@@ -282,9 +337,276 @@ p{
              color: $theme-pink;
          }
      }
+     @media screen and (max-width: 576px){
+         .row{
+             max-height: 200px;
+         }
+        .header-h2{
+            font-size: 1.5em;
+            font-family: 'Cabin Sketch', cursive;
+            color: $paragraph-color;
+            // text-transform: uppercase;
+        }
+        .header-h3{
+            font-size: 1em;
+            font-family: 'Cabin Sketch', cursive;
+            color: $theme-pink;
+            // text-transform: uppercase;
+        }
+     }
  } 
+ #info{
+    .info{
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+        background-color: black;
+        color: white;
+        min-height: 1000px;
+        display: grid;
+        place-items: center;
+        position: relative;
+        top: 150px;
+        h3,p{
+            color: white;
+        }
+    }
+        
+
+    .maps{
+        clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
+        min-height: 800px;
+
+     }
+    .form{
+        display: grid;
+        place-items: center;
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+        background-color: $theme-pink;
+        min-height: 1050px;
+        position: relative;
+        bottom: 150px;
+        @media screen and (max-width:768px){
+            min-height: 1500px;
+        }
+        h1{
+            color: white;
+        }
+        	/* form starting stylings ------------------------------- */
+	.group {
+		position: relative;
+		margin-bottom: 35px;
+	}
+	
+	input {
+		font-size: 18px;
+		padding: 5px 10px 10px 5px;
+		display: block;
+		width: 100%;
+		border: none;
+		border-bottom: 1px solid white;
+		background: transparent;
+		color: white;
+	}
+	
+		input:focus {
+			outline: none;
+		}
+	
+	/* LABEL ======================================= */
+	label {
+		color: white;
+		font-size: 18px;
+		font-weight: normal;
+		position: absolute;
+		pointer-events: none;
+		left: 5px;
+		top: 10px;
+		transition: 0.2s ease all;
+		-moz-transition: 0.2s ease all;
+		-webkit-transition: 0.2s ease all;
+	}
+	
+	/* active state */
+	input:focus ~ label, input:valid ~ label {
+		top: -20px;
+		font-size: 14px;
+		color: #fff;
+	}
+	
+	/* BOTTOM BARS ================================= */
+	.bar {
+		position: relative;
+		display: block;
+		width: 100%;
+	}
+	
+		.bar:before, .bar:after {
+			content: '';
+			height: 2px;
+			width: 0;
+			bottom: 1px;
+			position: absolute;
+			background: #fff;
+			transition: 0.2s ease all;
+			-moz-transition: 0.2s ease all;
+			-webkit-transition: 0.2s ease all;
+		}
+	
+		.bar:before {
+			left: 50%;
+		}
+	
+		.bar:after {
+			right: 50%;
+		}
+	
+	
+	
+	/* active state */
+	input:focus ~ .bar:before, input:focus ~ .bar:after {
+		width: 50%;
+	}
+	
+	/* HIGHLIGHTER ================================== */
+	.highlight {
+		position: absolute;
+		height: 60%;
+		width: 100px;
+		top: 25%;
+		left: 0;
+		pointer-events: none;
+		opacity: 0.5;
+	}
+	
+	/* active state */
+	input:focus ~ .highlight {
+		-webkit-animation: inputHighlighter 0.3s ease;
+		-moz-animation: inputHighlighter 0.3s ease;
+		animation: inputHighlighter 0.3s ease;
+	}
+	
+	/* ANIMATIONS ================ */
+	@-webkit-keyframes inputHighlighter {
+		from {
+			background: #fff;
+		}
+	
+		to {
+			width: 0;
+			background: transparent;
+		}
+	}
+	
+	@-moz-keyframes inputHighlighter {
+		from {
+			background: #fff;
+		}
+	
+		to {
+			width: 0;
+			background: transparent;
+		}
+	}
+	
+	@keyframes inputHighlighter {
+		from {
+			background: #fff;
+		}
+	
+		to {
+			width: 0;
+			background: transparent;
+		}
+	}
+
+	.btn-contact{
+		border: white 1px solid;
+		color: white;
+		&:hover{
+			border: white solid 1px;
+			background-color: white;
+			color:$theme-pink;
+		}
+	}
+	
+		@-webkit-keyframes swing {
+			15% {
+				-webkit-transform: translateY(5px);
+				transform: translateY(5px);
+			}
+			30% {
+				-webkit-transform: translateY(-5px);
+				transform: translateY(-5px);
+			}
+			50% {
+				-webkit-transform: translateY(3px);
+				transform: translateY(3px);
+			}
+			65% {
+				-webkit-transform: translateY(-3px);
+				transform: translateY(-3px);
+			}
+			80% {
+				-webkit-transform: translateY(2px);
+				transform: translateY(2px);
+			}
+			100% {
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+		}
+		@keyframes swing {
+			15% {
+				-webkit-transform: translateY(5px);
+				transform: translateY(5px);
+			}
+			30% {
+				-webkit-transform: translateY(-5px);
+				transform: translateY(-5px);
+			}
+			50% {
+				-webkit-transform: translateY(3px);
+				transform: translateY(3px);
+			}
+			65% {
+				-webkit-transform: translateY(-3px);
+				transform: translateY(-3px);
+			}
+			80% {
+				-webkit-transform: translateY(2px);
+				transform: translateY(2px);
+			}
+			100% {
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+		}
+		.box
+		{
+			-webkit-animation: swing 1s ease;
+			animation: swing 1s ease;
+			-webkit-animation-iteration-count: 1;
+			animation-iteration-count: infinite;
+		}
+
+    }
+    .contact-img{
+        position: relative;
+        min-height: 500px;
+        img{
+            position: absolute;
+            width: 100%;
+        }
+    
+    }
+ 
+    }
+ 
 
 
+
+
+
+ 
 
 
 
