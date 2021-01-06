@@ -10,10 +10,10 @@ body{
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     overflow-x: hidden;
-    cursor: url("/../img/cursor.png"), auto;	
+    // cursor: url("/../img/cursor.png"), auto;	
 
     .navbar{
-        background:url("/../img/MotionMotionNavbar.png");
+        background:url("./../img/MotionMotionNavbar.png");
         background-repeat: no-repeat;
         border-bottom: 1px solid transparent;
         // background: rgba(0, 0, 0, 0);
@@ -105,7 +105,10 @@ body{
     }
 
 }
-
+    .shake-input{
+        animation: shake 0.5s;
+        // animation-iteration-count: infinite;
+    }
   
   @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -124,7 +127,7 @@ body{
 footer {
     color:$theme-pink;
     .row .line{
-        background:url("/../img/MotionMotionNavbar.png");
+        background:url("./../img/MotionMotionNavbar.png");
         height: 10vh;
         // background-size: 100vw 50vh;
         // transform: rotate(180deg);
@@ -158,6 +161,26 @@ footer {
     font-size: 8vw;
     font-family: 'Cabin Sketch', cursive;
     font-weight: bold;
+}
+
+.header-h2{
+    font-size: 2.5em;
+    font-family: 'Cabin Sketch', cursive;
+    color: $paragraph-color;
+    // text-transform: uppercase;
+}
+.header-modal{
+    font-size: 2.5em;
+    font-family: 'Cabin Sketch', cursive;
+    color: white
+    // text-transform: uppercase;
+}
+
+.header-h3{
+    font-size: 2em;
+    font-family: 'Cabin Sketch', cursive;
+    color: $theme-pink;
+    // text-transform: uppercase;
 }
 #mheader{
     letter-spacing: -10px;
@@ -205,23 +228,6 @@ footer {
 
 
 
-
-
-
-
-
-.header-h2{
-    font-size: 2.5em;
-    font-family: 'Cabin Sketch', cursive;
-    color: $paragraph-color;
-    // text-transform: uppercase;
-}
-.header-h3{
-    font-size: 2em;
-    font-family: 'Cabin Sketch', cursive;
-    color: $theme-pink;
-    // text-transform: uppercase;
-}
 .date{
      color: $theme-pink;
      font-family: 'Cabin Sketch', cursive;
@@ -381,17 +387,33 @@ p{
         place-items: center;
         clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
         background-color: $theme-pink;
-        min-height: 1050px;
+        min-height: 1000px;
         position: relative;
         bottom: 150px;
-        @media screen and (max-width:768px){
-            min-height: 1500px;
-        }
+        // @media screen and (max-width:768px){
+        //     min-height: 1500px;
+        // }
         h1{
             color: white;
         }
         	/* form starting stylings ------------------------------- */
-	.group {
+	
+
+    }
+    .contact-img{
+        position: relative;
+        min-height: 500px;
+        img{
+            position: absolute;
+            width: 100%;
+        }
+    
+    }
+ 
+    }
+ 
+
+    .group {
 		position: relative;
 		margin-bottom: 35px;
 	}
@@ -407,9 +429,9 @@ p{
 		color: white;
 	}
 	
-		input:focus {
-			outline: none;
-		}
+    input:focus {
+        outline: none;
+    }
 	
 	/* LABEL ======================================= */
 	label {
@@ -579,30 +601,17 @@ p{
 				-webkit-transform: translateY(0);
 				transform: translateY(0);
 			}
-		}
-		.box
-		{
-			-webkit-animation: swing 1s ease;
-			animation: swing 1s ease;
-			-webkit-animation-iteration-count: 1;
-			animation-iteration-count: infinite;
-		}
-
-    }
-    .contact-img{
-        position: relative;
-        min-height: 500px;
-        img{
-            position: absolute;
-            width: 100%;
         }
-    
-    }
- 
-    }
- 
-
-
+        .bg-pink{
+            background-color: $theme-pink;
+        }
+		// .box
+		// {
+		// 	-webkit-animation: swing 1s ease;
+		// 	animation: swing 1s ease;
+		// 	-webkit-animation-iteration-count: 1;
+		// 	animation-iteration-count: infinite;
+		// }
 
 
 

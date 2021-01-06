@@ -4,11 +4,10 @@ body {
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
   overflow-x: hidden;
-  cursor: url("/../img/cursor.png"), auto;
 }
 
 body .navbar {
-  background: url("/../img/MotionMotionNavbar.png");
+  background: url("./../img/MotionMotionNavbar.png");
   background-repeat: no-repeat;
   border-bottom: 1px solid transparent;
 }
@@ -137,6 +136,11 @@ body .section2-text h2 {
   font-size: 3em;
 }
 
+.shake-input {
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+}
+
 @-webkit-keyframes shake {
   0% {
     -webkit-transform: translate(1px, 1px) rotate(0deg);
@@ -236,7 +240,7 @@ footer {
 }
 
 footer .row .line {
-  background: url("/../img/MotionMotionNavbar.png");
+  background: url("./../img/MotionMotionNavbar.png");
   height: 10vh;
   background-repeat: no-repeat;
   border-bottom: 1px solid transparent;
@@ -251,6 +255,13 @@ footer .row .col-4:first-child {
   /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
   /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
   /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+  /* LABEL ======================================= */
+  /* active state */
+  /* BOTTOM BARS ================================= */
+  /* active state */
+  /* HIGHLIGHTER ================================== */
+  /* active state */
+  /* ANIMATIONS ================ */
 }
 
 #edition2020 .video-row {
@@ -276,6 +287,24 @@ footer .row .col-4:first-child {
   font-size: 8vw;
   font-family: 'Cabin Sketch', cursive;
   font-weight: bold;
+}
+
+#edition2020 .header-h2 {
+  font-size: 2.5em;
+  font-family: 'Cabin Sketch', cursive;
+  color: #949494;
+}
+
+#edition2020 .header-modal {
+  font-size: 2.5em;
+  font-family: 'Cabin Sketch', cursive;
+  color: white;
+}
+
+#edition2020 .header-h3 {
+  font-size: 2em;
+  font-family: 'Cabin Sketch', cursive;
+  color: #FF0092;
 }
 
 #edition2020 #mheader {
@@ -380,18 +409,6 @@ footer .row .col-4:first-child {
     top: -20px;
     text-shadow: 0 1px 0 #FF0092, 0 2px 0 #FF0092, 0 3px 0 #FF0092, 0 4px 0 #FF0092, 0 5px 0 #FF0092;
   }
-}
-
-#edition2020 .header-h2 {
-  font-size: 2.5em;
-  font-family: 'Cabin Sketch', cursive;
-  color: #949494;
-}
-
-#edition2020 .header-h3 {
-  font-size: 2em;
-  font-family: 'Cabin Sketch', cursive;
-  color: #FF0092;
 }
 
 #edition2020 .date {
@@ -562,35 +579,32 @@ footer .row .col-4:first-child {
   -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
           clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
   background-color: #FF0092;
-  min-height: 1050px;
+  min-height: 1000px;
   position: relative;
   bottom: 150px;
   /* form starting stylings ------------------------------- */
-  /* LABEL ======================================= */
-  /* active state */
-  /* BOTTOM BARS ================================= */
-  /* active state */
-  /* HIGHLIGHTER ================================== */
-  /* active state */
-  /* ANIMATIONS ================ */
-}
-
-@media screen and (max-width: 768px) {
-  #edition2020 #info .form {
-    min-height: 1500px;
-  }
 }
 
 #edition2020 #info .form h1 {
   color: white;
 }
 
-#edition2020 #info .form .group {
+#edition2020 #info .contact-img {
+  position: relative;
+  min-height: 500px;
+}
+
+#edition2020 #info .contact-img img {
+  position: absolute;
+  width: 100%;
+}
+
+#edition2020 .group {
   position: relative;
   margin-bottom: 35px;
 }
 
-#edition2020 #info .form input {
+#edition2020 input {
   font-size: 18px;
   padding: 5px 10px 10px 5px;
   display: block;
@@ -601,11 +615,11 @@ footer .row .col-4:first-child {
   color: white;
 }
 
-#edition2020 #info .form input:focus {
+#edition2020 input:focus {
   outline: none;
 }
 
-#edition2020 #info .form label {
+#edition2020 label {
   color: white;
   font-size: 18px;
   font-weight: normal;
@@ -618,19 +632,19 @@ footer .row .col-4:first-child {
   -webkit-transition: 0.2s ease all;
 }
 
-#edition2020 #info .form input:focus ~ label, #edition2020 #info .form input:valid ~ label {
+#edition2020 input:focus ~ label, #edition2020 input:valid ~ label {
   top: -20px;
   font-size: 14px;
   color: #fff;
 }
 
-#edition2020 #info .form .bar {
+#edition2020 .bar {
   position: relative;
   display: block;
   width: 100%;
 }
 
-#edition2020 #info .form .bar:before, #edition2020 #info .form .bar:after {
+#edition2020 .bar:before, #edition2020 .bar:after {
   content: '';
   height: 2px;
   width: 0;
@@ -642,19 +656,19 @@ footer .row .col-4:first-child {
   -webkit-transition: 0.2s ease all;
 }
 
-#edition2020 #info .form .bar:before {
+#edition2020 .bar:before {
   left: 50%;
 }
 
-#edition2020 #info .form .bar:after {
+#edition2020 .bar:after {
   right: 50%;
 }
 
-#edition2020 #info .form input:focus ~ .bar:before, #edition2020 #info .form input:focus ~ .bar:after {
+#edition2020 input:focus ~ .bar:before, #edition2020 input:focus ~ .bar:after {
   width: 50%;
 }
 
-#edition2020 #info .form .highlight {
+#edition2020 .highlight {
   position: absolute;
   height: 60%;
   width: 100px;
@@ -664,7 +678,7 @@ footer .row .col-4:first-child {
   opacity: 0.5;
 }
 
-#edition2020 #info .form input:focus ~ .highlight {
+#edition2020 input:focus ~ .highlight {
   -webkit-animation: inputHighlighter 0.3s ease;
   animation: inputHighlighter 0.3s ease;
 }
@@ -689,12 +703,12 @@ footer .row .col-4:first-child {
   }
 }
 
-#edition2020 #info .form .btn-contact {
+#edition2020 .btn-contact {
   border: white 1px solid;
   color: white;
 }
 
-#edition2020 #info .form .btn-contact:hover {
+#edition2020 .btn-contact:hover {
   border: white solid 1px;
   background-color: white;
   color: #FF0092;
@@ -754,20 +768,7 @@ footer .row .col-4:first-child {
   }
 }
 
-#edition2020 #info .form .box {
-  -webkit-animation: swing 1s ease;
-  animation: swing 1s ease;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: infinite;
-}
-
-#edition2020 #info .contact-img {
-  position: relative;
-  min-height: 500px;
-}
-
-#edition2020 #info .contact-img img {
-  position: absolute;
-  width: 100%;
+#edition2020 .bg-pink {
+  background-color: #FF0092;
 }
 /*# sourceMappingURL=style.css.map */

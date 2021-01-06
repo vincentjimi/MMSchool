@@ -10,26 +10,64 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body id="edition2020">
-    <div id="myModal" class="modal" displayed="false" tabindex="-1">
+    <div id="myModal" class="modal " displayed="false" tabindex="-1">
         <div class="modal-dialog">
-          <div class="modal-content">
+          <div class="modal-content bg-pink">
             <div class="modal-header">
-              <h5 class="modal-title">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <h1 class="header-modal">GAGNEZ VOS TICKETS !</h1>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>Modal body text goes here.</p>
+            </button>
+        </div>
+        <div class="modal-body">
+            
+            <form autocomplete="off">
+                <input autocomplete="false" name="hidden" type="search" style="display:none;">
+                    <p class="text-white pb-3">Remplissez le formulaire pour tentez de remporter des tickets gratuits pour le festival de 2021, nous offrons 200 tickets au participants du concours, les gagnants seront selectioné de manière aléatoire.</p>
+                    <div class="group">
+                        <input autocomplete="false" type="text"  required id="nom">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label id="lNom">Nom</label>
+                        
+                    </div>
+                    
+                    <div class="group">
+                        <input autocomplete="false" type="text" id="prenom" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label id="lPrenom" >Prénom</label>
+                    </div>
+                        
+                    <div class="group">
+                        <input autocomplete="false" type="text" id="email" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label id="lEmail" >Email</label>
+                    </div>
+                    
+                    <div class="group">
+                        <input autocomplete="false" type="text" id="email2" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label id="lEmail2" >Confirmation email</label>
+                    </div>
+                    <div class="group">
+                        <button type="submit" id="submit" class="btn btn-block btn-contact btn-lg disabled">Envoyer <span class="glyphicon glyphicon-send"></span></button>
+                    </div>
+                    <p id="p"></p>
+                </form>
+                <div id="contenu"></div>
+
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-contact" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
       </div>
 <div class="container-fluid p-0">
+
 
     <nav class="row navbar navbar-light fixed-top bg-white">
         <div class="container">
@@ -572,22 +610,11 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <!-- <h1 class="header-h1">GAGNEZ VOS TICKETS !</h1> -->
                 <h1 class="header-h1">NOUS CONTACTER</h1>
             </div>
             <div class="col-12 col-lg-6 contact">
 
         <form>
-            
-
-<!-- 
-   <input type="text" id="nom"> <br>
-   <input type="text" id="prenom"> <br>
-   <input type="text" id="email"> <br>
-   <input type="text" id="email2">
- 
-   <button type="submit" id="submit">go</button> -->
-
 
             <div class="group">
                 <input type="text" required>
@@ -620,8 +647,9 @@
             <button type="submit" class="btn btn-block btn-contact btn-lg">Envoyer <span class="glyphicon glyphicon-send"></span></button>
         </div>
     </form>
+    
 </div>
-<div class="col-12 col-lg-6 contact-img">
+<div class="col-12 col-lg-6 contact-img d-lg-block d-none ">
     <img src="img/Home2.png" alt="">
     <!-- <img src="img/sitting-2.svg" alt=""> -->
     <img src="img/sitting-4d.png" alt="">
@@ -706,8 +734,6 @@
     </div>
 </footer>
     </div><!-- end of container-fluid -->
-
-
 
 
 
