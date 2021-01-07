@@ -1,9 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
   overflow-x: hidden;
+}
+
+body .header-h1 {
+  font-size: 8vw;
+  font-family: 'Cabin Sketch', cursive;
+  font-weight: bold;
+}
+
+body .header-h2 {
+  font-size: 2.5em;
+  font-family: 'Cabin Sketch', cursive;
+  color: #949494;
+}
+
+body .header-modal {
+  font-size: 2.5em;
+  font-family: 'Cabin Sketch', cursive;
+  color: white;
+}
+
+body .header-h3 {
+  font-size: 2em;
+  font-family: 'Cabin Sketch', cursive;
+  color: #FF0092;
+}
+
+body #cookie_message {
+  background-color: black;
+}
+
+body #cookie_message .btn-contact {
+  border: white 1px solid;
+  color: white;
+}
+
+body #cookie_message .btn-contact:hover {
+  border: white solid 1px;
+  background-color: white;
+  color: #FF0092;
 }
 
 body .navbar {
@@ -283,30 +329,6 @@ footer .row .col-4:first-child {
   bottom: 0;
 }
 
-#edition2020 .header-h1 {
-  font-size: 8vw;
-  font-family: 'Cabin Sketch', cursive;
-  font-weight: bold;
-}
-
-#edition2020 .header-h2 {
-  font-size: 2.5em;
-  font-family: 'Cabin Sketch', cursive;
-  color: #949494;
-}
-
-#edition2020 .header-modal {
-  font-size: 2.5em;
-  font-family: 'Cabin Sketch', cursive;
-  color: white;
-}
-
-#edition2020 .header-h3 {
-  font-size: 2em;
-  font-family: 'Cabin Sketch', cursive;
-  color: #FF0092;
-}
-
 #edition2020 #mheader {
   letter-spacing: -10px;
   display: inline;
@@ -531,6 +553,7 @@ footer .row .col-4:first-child {
 
 #edition2020 #other-activies .col-6 h4 {
   color: #FF0092;
+  text-shadow: black 1px 1px 1px;
 }
 
 @media screen and (max-width: 576px) {
@@ -546,6 +569,7 @@ footer .row .col-4:first-child {
     font-size: 1em;
     font-family: 'Cabin Sketch', cursive;
     color: #FF0092;
+    text-shadow: black 1px 1px 2px;
   }
 }
 

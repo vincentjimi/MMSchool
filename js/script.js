@@ -1,4 +1,20 @@
 $(document).ready(function () {
+
+
+    let cookie = Cookies.get('Examencookie');
+    if (cookie === undefined) {
+
+        $('#cookie_btn').click(function () {
+                
+                $('#cookie_message').fadeOut();
+                Cookies.set('Examencookie', 'valeur du cookie', { expires: 365 });
+                
+        })//click
+        
+    } else {
+        $('#cookie_message').remove();
+    }
+
   
     $(window).scroll(function() {
       if ($(document).scrollTop() > 700 && $("#myModal").attr("displayed") === "false") {
@@ -6,7 +22,8 @@ $(document).ready(function () {
         $("#myModal").attr("displayed", "true");
         }
         validate();
-  });
+    });
+    
   
   //FORMULAIRE AJAX
   
@@ -18,10 +35,26 @@ $(document).ready(function () {
       var email = $("#email").val();
       var email2 = $("#email2").val();
         
-      if (email2 != email) {document.getElementById('email2').classList.add("shake-input");
-      setTimeout(function(){ document.getElementById('email2').classList.remove("shake-input");}, 500);
-      } 
-        console.log(nom, prenom, email, email2);
+        if (!(/\S+@\S+\.\S+/.test(email))) {
+            document.getElementById('email').classList.add("shake-input");
+            setTimeout(function(){ document.getElementById('email').classList.remove("shake-input");}, 500);
+        }
+        if (!(/\S+@\S+\.\S+/.test(email2))) {
+            document.getElementById('email2').classList.add("shake-input");
+            setTimeout(function(){ document.getElementById('email2').classList.remove("shake-input");}, 500);
+        }
+        if (email2 != email) {
+            document.getElementById('email2').classList.add("shake-input");
+            setTimeout(function(){ document.getElementById('email2').classList.remove("shake-input");}, 500);
+        }
+        if (nom.length <= 2) {
+            document.getElementById('nom').classList.add("shake-input");
+            setTimeout(function(){ document.getElementById('nom').classList.remove("shake-input");}, 500);
+        }
+        if (prenom.length <= 2) {
+            document.getElementById('prenom').classList.add("shake-input");
+            setTimeout(function(){ document.getElementById('prenom').classList.remove("shake-input");}, 500);
+        }
   
     //  $('#contenu').load("mail.php")
   

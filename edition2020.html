@@ -8,6 +8,8 @@
     <script src="https://kit.fontawesome.com/39f0c3e5ce.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 </head>
 <body id="edition2020">
     <div id="myModal" class="modal " displayed="false" tabindex="-1">
@@ -68,8 +70,17 @@
       </div>
 <div class="container-fluid p-0">
 
+    <div id="cookie_message" class=" fixed-bottom col-12 text-white p-5">
+        <h2 class="header-h3">Cookies</h2>
+        <p>
+            Nous utilisont des cookies, pour vous garantir une expérience optimale, vous pouvez toujours modifier les réglages d'acceptation des cookies, ou consulter notre page des données.
+        </p>
+        <button id="cookie_btn" class="btn btn-contact">
+            J'accepte
+        </button>
+      </div>
 
-    <nav class="row navbar navbar-light fixed-top bg-white">
+    <nav class="row navbar navbar2020 navbar-light fixed-top bg-white">
         <div class="container">
             <a class="navbar-brand mb-1 pl-2" href="#"><img src="img/MMlogoOfficielColor.png" height="30" alt="Logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,6 +107,9 @@
         </nav>
     </div>
     <div class="container-fluid">
+
+        
+
         <div class="row video-row">
             <video width="320" height="240" autoplay controls>
                 <source src="img/video.mp4" type="video/mp4">
@@ -524,46 +538,46 @@
 
     <div id="other-activies" class="container mt-5 pt-5">
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 slide-left">
                 <img src="img/pic1.jpg" alt="">
             </div>
-            <div class="col-6">
+            <div class="col-6 slide-right">
                 <h3 class="header-h2" >ATELIERS ENFANTS</h3>
                 <h4 class="header-h3" >10H - 12H & 14H - 16H</h4>
             </div>
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 slide-left">
                 <img src="img/pic2.jpg" alt="">
             </div>
-            <div class="col-6">
+            <div class="col-6 slide-right">
                 <h3 class="header-h2" >PROJECTIONS</h3>
                 <h4 class="header-h3" >10H - 18H</h4>
             </div>
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 slide-left">
                 <img src="img/pic3.jpg" alt="">
             </div>
-            <div class="col-6">
+            <div class="col-6 slide-right">
                 <h3 class="header-h2" >STANDS FORMATION</h3>
                 <h4 class="header-h3" >10H - 17H</h4>
             </div>
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 slide-left">
                 <img src="img/pic4.jpg" alt="">
             </div>
-            <div class="col-6">
+            <div class="col-6 slide-right">
                 <h3 class="header-h2" >RENCONTRES PROFESSIONELLES</h3>
                 <h4 class="header-h3" >18H - 20H</h4>
             </div>
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 slide-left">
                 <img src="img/pic5.jpg" alt="">
             </div>
-            <div class="col-6">
+            <div class="col-6 slide-right">
                 <h3 class="header-h2" >PERFORMANCES
                     ET CONCERTS</h3>
                 <h4 class="header-h3" >19H40 - 3H30</h4>
@@ -740,15 +754,12 @@
 
 
 
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <script src="js/parallax.js"></script>
-    <script type="text/javascript" src="js/scene.js"></script>
-    <script type="text/javascript" src="js/background.js"></script>
-    <script type="text/javascript" src="js/clock.js"></script>
+    <script type="text/javascript" src="js/gsap.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
         
     </body>                
