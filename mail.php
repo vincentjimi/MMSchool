@@ -7,7 +7,7 @@ $email2 = $_POST["email2"];
 
 $to = "vincentjimi50@gmail.com";
 $subject = "Concours festival Motion Motion";
-$message = "Participation de".$nom." ".$prenom." ".$email."au concours Motion Motion";
+$message = "Participation de ".$nom." ".$prenom." ".$email." au concours Motion Motion";
 $headers = "From: ". $email . "\r\n";
 $headers .= "Reply-To: ". $email . "\r\n";
 $headers .= "MIME-Version: 1.0\r\n";

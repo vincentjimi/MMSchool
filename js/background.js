@@ -1,6 +1,5 @@
-        ///This code if from code pen => https://codepen.io/Asadabbas/pen/OwOxBX
-        //CE code vient de code pen => https://codepen.io/Asadabbas/pen/OwOxBX
-        //// You Can Change shapes With "circle" , "square" , "triangle", "hexa" or custom image at Bottom of Js code////
+        // This code is from code pen => https://codepen.io/Asadabbas/pen/OwOxBX
+        // Ce code vient de code pen => https://codepen.io/Asadabbas/pen/OwOxBX
 
 var canvasShape = function(block_id, params) {
     if (typeof params === "object") {
@@ -157,6 +156,6 @@ canvasShape('canvas-shapes', {
   number_of_item:600,  // Max Limit Of Iteam 250
   shape: "triangle",  //You Can Change With "circle" , "square" , "triangle", "hexa"
   // color: '#008000',  // Change Elements Color
-  // image: "http://petitrocher.camp-atlantique.com/sites/default/files/styles/icone_titre_home_25_25/public/icone_smile_soleil_134.png",
+  // image: "",
   
 });

@@ -11,6 +11,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
   overflow-x: hidden;
+  cursor: url("./../img/cursor.png"), auto;
 }
 
 body .header-h1 {
@@ -296,6 +297,15 @@ footer .row .col-4:first-child {
   color: #949494;
 }
 
+footer img {
+  height: 30px;
+  display: inline;
+}
+
+footer img:hover {
+  cursor: pointer;
+}
+
 #edition2020 {
   /* THE CARD HOLDS THE FRONT AND BACK FACES */
   /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
@@ -312,7 +322,7 @@ footer .row .col-4:first-child {
 
 #edition2020 .video-row {
   width: 100vw;
-  height: 100vh;
+  height: 107vh;
   overflow: hidden;
   position: relative;
 }
@@ -327,6 +337,18 @@ footer .row .col-4:first-child {
   position: absolute;
   z-index: 10;
   bottom: 0;
+}
+
+#edition2020 #mutebtn {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  background-color: black;
+  color: white;
+}
+
+#edition2020 #mutebtn:hover {
+  background-color: #FF0092;
 }
 
 #edition2020 #mheader {
@@ -553,7 +575,6 @@ footer .row .col-4:first-child {
 
 #edition2020 #other-activies .col-6 h4 {
   color: #FF0092;
-  text-shadow: black 1px 1px 1px;
 }
 
 @media screen and (max-width: 576px) {
@@ -569,7 +590,6 @@ footer .row .col-4:first-child {
     font-size: 1em;
     font-family: 'Cabin Sketch', cursive;
     color: #FF0092;
-    text-shadow: black 1px 1px 2px;
   }
 }
 
@@ -588,6 +608,14 @@ footer .row .col-4:first-child {
 
 #edition2020 #info .info h3, #edition2020 #info .info p {
   color: white;
+}
+
+@media screen and (max-width: 576px) {
+  #edition2020 #info .info {
+    min-height: 1300px;
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
 }
 
 #edition2020 #info .maps {
@@ -794,5 +822,9 @@ footer .row .col-4:first-child {
 
 #edition2020 .bg-pink {
   background-color: #FF0092;
+}
+
+#edition2020 #mapDiv > div > div > div:nth-child(4) > div {
+  top: 100px !important;
 }
 /*# sourceMappingURL=style.css.map */
